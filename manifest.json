@@ -1,0 +1,15 @@
+{
+  "name": "Youtube community auto posting",
+  "description": "Google Chrome extension for automatic quiz posting on YouTube community.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "scripts/postinject.js"
+  },
+  "permissions": ["scripting", "webNavigation", "storage"],
+  "host_permissions": ["https://www.youtube.com/*"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "hello_extensions.png"
+  }
+}
